@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="converter-wrapper">
+        <h1>Climate Control</h1>
+        <section class="converter-box">
+            <div class="input-group">
+                <input type="number" id="temp-input" placeholder="Enter temperature" aria-label="Temperature input" />
+                <select id="temp-unit">
+                    <option value="C">Celsius</option>
+                    <option value="F">Fahrenheit</option>
+                    <option value="K">Kelvin</option>
+                </select>
+            </div>
+            <div class="button-group">
+                <button id="convert-btn">Convert</button>
+                <button id="clear-btn">Clear</button>
+            </div>
+            <div id="conversion-result"></div>
+        </section>
+        <button id="magic-btn">Magic</button>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

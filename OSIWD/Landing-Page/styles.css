@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 1s ease;
+}
+
+header {
+    background-color: #002244;
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.info-cards {
+    background-color: #e6e6e6;
+    padding: 20px 0;
+}
+
+.info-card {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 280px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: scale(1.05);
+}
+
+.info-cards .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hero {
+    background: url('ai-background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero h1, .hero p {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    display: inline-block;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 0 0 40px;
+}
+
+.course-overview {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.course-overview h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.course-overview p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.course-features {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.course-features li {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-size: 16px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.course-features li:hover {
+    transform: scale(1.05);
+}
+
+.recommended-courses {
+    padding: 60px 0;
+}
+
+.recommended-courses h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.course-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    max-width: 300px;
+    flex: 1 1 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin: 20px 0 10px;
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #002244;
+    color: white;
+    padding: 20px 0;
+}
+
+footer .links, footer .social, footer .contact {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    header, footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .btn {
+        padding: 10px 15px;
+    }
+
+    .course-features li {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    transition: background-color 1s ease, color 0.5s ease;
+}
+
+header {
+    background-color: #222;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #ffffff;
+}
+
+nav a:hover {
+    color: #ffa500;
+}
+
+.hero {
+    background: url('ai-background.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.info-cards {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+.info-card {
+    background: #444;
+}
+
+.course-overview {
+    padding: 60px 0;
+    background-color: #222;
+}
+
+.course-features li {
+    background: #333;
+}
+
+.recommended-courses {
+    padding: 60px 0;
+    background-color: #444;
+}
+
+.card {
+    background: #555;
+}
+
+footer {
+    background-color: #222;
+    color: #ffffff;
+    padding: 20px 0;
+}
+

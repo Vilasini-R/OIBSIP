@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #FFD700, #FFA500 50%, #87CEEB 50%, #B0C4DE 100%);
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background 0.5s ease-in-out;
+}
+
+.converter-wrapper {
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.5);
+    width: 90%;
+    max-width: 500px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.converter-wrapper:hover {
+    transform: translateY(-10px);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+input[type="number"], select {
+    width: calc(50% - 10px);
+    padding: 0.75rem;
+    margin: 0.5rem 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 48%;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+#convert-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 48%;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#convert-btn:hover {
+    background-color: #218838;
+}
+
+#clear-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 48%;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#clear-btn:hover {
+    background-color: #c82333;
+}
+
+#conversion-result {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    color: #555;
+}
+
+#magic-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.25rem;
+    transition: background-color 0.3s ease;
+}
+
+#magic-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+.cloudy-overcast {
+    background: linear-gradient(to right, #B0C4DE, #778899);
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.foggy {
+    background: linear-gradient(to right, #C0C0C0, #A9A9A9);
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.hazy {
+    background: linear-gradient(to right, #FFDAB9, #F5DEB3);
+    padding: 20px;
+    margin: 10px;
+    color: black;
+    text-align: center;
+}
+
+.light-rain {
+    background: linear-gradient(to right, #ADD8E6, #B0E0E6);
+    padding: 20px;
+    margin: 10px;
+    color: black;
+    text-align: center;
+}
+
+.moderate-rain {
+    background: linear-gradient(to right, #87CEEB, #4682B4);
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+        
+.heavy-rain {
+    background: linear-gradient(to right, #4682B4, #1E90FF);
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.drizzle {
+    background: linear-gradient(to right, #B0E0E6, #E0FFFF);
+    padding: 20px;
+    margin: 10px;
+    color: black;
+    text-align: center;
+}
+
+.showers {
+   background: linear-gradient(to right, #87CEFA, #4682B4);
+   padding: 20px;
+   margin: 10px;
+   color: white;
+   text-align: center;
+}
+
+.thunderstorms {
+    background: linear-gradient(to right, #483D8B, #191970);
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.light-snow {
+    background: linear-gradient(to right, #F0FFFF, #E0FFFF);
+    padding: 20px;
+    margin: 10px;
+    color: black;
+    text-align: center;
+}
+
+.moderate-snow {
+    background: linear-gradient(to right, #E0FFFF, #B0E0E6);
+    padding: 20px;
+    margin: 10px;
+    color: black;
+    text-align: center;
+}
+
+.heavy-snow {
+    background: linear-gradient(to right, #B0E0E6, #ADD8E6);
+    padding: 20px;
+    margin: 10px;
+    color: black;
+    text-align: center;
+}
+
+.snow-showers {
+    background: linear-gradient(to right, #DCDCDC, #F0FFFF);
+    padding: 20px;
+    margin: 10px;
+    color: black;
+    text-align: center;
+}
+
+.blizzard {
+    background: linear-gradient(to right, #FFFFFF, #DCDCDC);
+    padding: 20px;
+    margin: 10px;
+    color: black;
+    text-align: center;
+}
+
+.sleet-ice-pellets {
+    background: linear-gradient(to right, #C0C0C0, #87CEEB);
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.freezing-rain {
+    background: linear-gradient(to right, #B0E0E6, #C0C0C0);
+    padding: 20px;
+    margin: 10px;
+    color: black;
+    text-align: center;
+}
+
+.hail {
+    background: linear-gradient(to right, #C0C0C0, #A9A9A9);
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.breezy {
+    background: linear-gradient(to right, #E6E6FA, #B0E0E6);
+    padding: 20px;
+    margin: 10px;
+    color: black;
+    text-align: center;
+}
+
+.windy {
+    background: linear-gradient(to right, #ADD8E6, #87CEEB);
+    padding: 20px;
+    margin: 10px;
+    color: black;
+    text-align: center;
+}
+
+.gusty {
+    background: linear-gradient(to right, #87CEEB, #4682B4);
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.gale {
+    background: linear-gradient(to right, #4682B4, #2F4F4F);
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.dust-storm-sandstorm {
+    background: linear-gradient(to right, #DEB887, #F4A460);
+    padding: 20px;
+    margin: 10px;
+    color: black;
+    text-align: center;
+}
+
+.tornado {
+    background: linear-gradient(to right, #696969, #2F4F4F);
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.hurricane-typhoon-cyclone {
+    background: linear-gradient(to right, #4682B4, #00008B);
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
